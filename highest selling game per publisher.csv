@@ -1,0 +1,4 @@
+SELECT Name,Year, (NA_Sales + EU_Sales + JP_Sales + Other_Sales) AS total_sales
+FROM smooth-state-454404-u6.videogame_sales.video_games
+ORDER BY total_sales DESC
+LIMIT 10;
