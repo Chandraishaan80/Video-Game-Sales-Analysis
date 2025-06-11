@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;\f2\fnil\fcharset0 LucidaGrande;
+\f3\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c60000;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl264\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # 
+\f1 \uc0\u55356 \u57262 
+\f0  Video Game Sales Analysis: Discovering the Golden Age of Gaming\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+## 
+\f1 \uc0\u55357 \u56524 
+\f0  Overview\
+\
+This project analyzes 400 of the best-selling video games (since 1977) to explore industry trends, identify standout publishers and titles, and determine when the video game industry was at its peak.\
+\
+We use:\
+- **BigQuery** for querying structured game sales data\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx7928\tx8921\tx9841\pardirnatural\partightenfactor0
+\cf0 - **Google Sheets** for visualising results\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+---\
+\
+## 
+\f1 \uc0\u55357 \u57056 
+\f0  Tech Stacks\
+- **SQL (Google BigQuery)** \'96 for querying and aggregating sales data  \
+- **Google Sheets** \'96 for creating visuals (charts, tables, and summaries)  \
+- **GitHub** \'96 for project documentation and version control  \
+\
+---\
+\
+## 
+\f1 \uc0\u55357 \u56513 
+\f0  Project Contents\
+\
+### 
+\f1 \uc0\u55357 \u56633 
+\f0  SQL Scripts\
+\
+| File | Description |\
+|------|-------------|\
+| `highest_total_sales_by_game.sql` | Finds the top 10 best-selling games (calculates total global sales) |\
+| `highest_selling_game_per_publisher.sql` | Lists each publisher\'92s highest-selling individual game |\
+| `top_years_by_average_sales.sql` | Ranks years by average game sales and identifies strong sales periods |\
+| `total_games_sold_by_year.sql` | Counts how many games were sold each year |\
+\
+> 
+\f1 \uc0\u55357 \u56481 
+\f0  **Only `highest_total_sales_by_game.sql` uses**:  \
+> ```sql\
+> (NA_Sales + EU_Sales + JP_Sales + Other_Sales) AS total_sales\
+> ```\
+\
+---\
+\
+### 
+\f1 \uc0\u55357 \u56520 
+\f0  Visualizations\
+\
+All SQL results were exported to **Google Sheets** and visualized using built-in charts.\
+\
+
+\f1 \uc0\u55357 \u56770 \u65039 
+\f0  File: `results-Highest selling game per publisher.xlsx`\
+\
+Included visuals:\
+- **Bar Charts**: Top games and publisher performances  \
+- **Line Graphs**: Sales trends across years  \
+- **Summary Tables**: Yearly sales and hit counts\
+\
+---\
+\
+## 
+\f1 \uc0\u9881 \u65039 
+\f0  How to Use\
+\
+1. Clone this repo\
+2. Upload `.sql` scripts into BigQuery\
+3. Replace the table path with your own dataset\
+4. Run queries individually\
+5. Export each result to Google Sheets\
+6. Use **Insert 
+\f2 \uc0\u8594 
+\f0  Chart** to build visualizations\
+\
+---\
+\
+## 
+\f1 \uc0\u9989 
+\f0  Project Status\
+\
+- [x] SQL queries tested and validated  \
+- [x] Visual charts created from live data  \
+- [x] Project completed and fully documented  \
+\
+---\
+\
+## 
+\f1 \uc0\u55357 \u56540 
+\f0  License\
+\
+Released under the **MIT License** \'96 open to use, remix, and share.\
+\
+---\
+\
+## 
+\f1 \uc0\u55357 \u56908 
+\f0  Acknowledgments\
+\
+- [Google BigQuery](https://cloud.google.com/bigquery) \'96 data analysis engine  \
+- [Google Sheets](https://sheets.google.com) \'96 for smooth visual storytelling  \
+\
+---\
+\
+## 
+\f1 \uc0\u55357 \u56599 
+\f0  Contact\
+\
+Want to collab or chat? Reach out via 
+\f3\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+www.linkedin.com/in/ishan-chandra2000 
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 or chandraishaan80@gmail.com\}\
+\
+}
